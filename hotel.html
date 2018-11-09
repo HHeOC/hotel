@@ -1,75 +1,8 @@
 <html>
   <head>
     <script src="hotel.js"></script>
+    <link rel="stylesheet" href="hotel.css">
     <style>
-    body {
-      background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/02/f5/d6/f0/grand-aston-yogyakarta.jpg");
-      background-size:100%;
-    }
-    #name{
-      font-size:80px;
-      color:black;
-      background-image: url("https://images-na.ssl-images-amazon.com/images/I/717jZnKnP5L._SX425_.jpg");
-      background-repeat: no-repeat;
-      background-size:8%;
-      
-    }
-    #d1{
-        height:70vh;
-        width:15vw;
-        background-color:white;
-        float:left;
-        border: double;
-        margin-right:10px;
-       
-    }
-    #d2{
-        height:70vh;
-        width:15vw;
-        background-color:white;
-        float:left;
-        margin-left:10px;
-        border: double;
-      
-    }
-    #d3{
-        height:70vh;
-        width:15vw;
-        background-color:white;
-        float:left;
-        margin-left:10px;
-        border: double;
-        
-    }
-     #d4{
-        height:70vh;
-        width:15vw;
-        float:left;
-        background-color:white;
-        margin-left:10px;
-        border: double;
-    }
-         #d5{
-        height:70vh;
-        width:15vw;
-        background-color:white;
-        float:left;
-        margin-left:10px;
-        border: double;
-        
-    }
-         #d6{
-        height:70vh;
-        width:15vw;
-        background-color:white;
-        float:right;
-        margin-right:10px;
-        border: double;
-       
-    }
-    h1{
-      font-size:25px;
-    }
     </style>
   </head>
   <body>
@@ -79,6 +12,10 @@
       <br>
           <input type="text" id="usersChoice">
           <button onclick="emList()" id="bb1">Check In</button>
+          <label class="switch">
+      <input type="checkbox" id="checkboxOne" onclick=lockRoomOne()>
+      <span class="slider round"></span>
+      </label>
             <ol id="people"></ol>
   <select id="delete1">
              <option value="0">1</option>
