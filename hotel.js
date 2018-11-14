@@ -12,18 +12,18 @@ var total = [];
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
     if (total.length < 4) {
-      var x = document.getElementById('usersChoice').value;
-      total.push(x);
+      var visitor = document.getElementById('usersChoice').value;
+      total.push(visitor);
        document.getElementById('usersChoice').value = "";
-      var li = document.createElement('li');
-       var newText = document.createTextNode(x +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
-       li.appendChild(newText);
+      var newli = document.createElement('li');
+       var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
+       newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[0];
-       olTag.appendChild(li);
+       olTag.appendChild(newli);
 }
     else {
-      document.getElementById('t1').innerHTML = "This room is full";
-     var button = document.getElementById('bb1').style.visibility = "hidden";
+      document.getElementById('end1').innerHTML = "This room is full";
+     var button = document.getElementById('removeB1').style.visibility = "hidden";
 }
     
       
@@ -37,18 +37,18 @@ function emList2() {
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
     if (total2.length < 4) {
-      var x = document.getElementById('usersChoice2').value;
-      total2.push(x);
+      var visitor = document.getElementById('usersChoice2').value;
+      total2.push(visitor);
        document.getElementById('usersChoice2').value = "";
-      var li = document.createElement('li');
-       var newText = document.createTextNode(x +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
-       li.appendChild(newText);
+      var newli = document.createElement('li');
+       var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
+       newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[1];
        olTag.appendChild(li);
 }
     else {
-      document.getElementById('t2').innerHTML = "This room is full";
-     var button = document.getElementById('bb2').style.visibility = "hidden";
+      document.getElementById('end2').innerHTML = "This room is full";
+     var button = document.getElementById('removeB2').style.visibility = "hidden";
 }
 
   }
@@ -60,18 +60,18 @@ function emList3() {
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
     if (total3.length < 4) {
-      var x = document.getElementById('usersChoice3').value;
-      total3.push(x);
+      var visitor = document.getElementById('usersChoice3').value;
+      total3.push(visitor);
        document.getElementById('usersChoice3').value = "";
-      var li = document.createElement('li');
-       var newText = document.createTextNode(x +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
-       li.appendChild(newText);
+      var newli = document.createElement('li');
+       var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
+       newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[2];
        olTag.appendChild(li);
 }
     else {
-      document.getElementById('t3').innerHTML = "This room is full";
-     var button = document.getElementById('bb3').style.visibility = "hidden";
+      document.getElementById('end3').innerHTML = "This room is full";
+     var button = document.getElementById('removeB3').style.visibility = "hidden";
 }
   
   }
@@ -83,18 +83,18 @@ function emList4() {
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
     if (total4.length < 4) {
-      var x = document.getElementById('usersChoice4').value;
-      total4.push(x);
+      var visitor = document.getElementById('usersChoice4').value;
+      total4.push(visitor);
        document.getElementById('usersChoice4').value = "";
-      var li = document.createElement('li');
-       var newText = document.createTextNode(x +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
-       li.appendChild(newText);
+      var newli = document.createElement('li');
+       var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
+       newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[3];
        olTag.appendChild(li);
 }
     else {
-      document.getElementById('t4').innerHTML = "This room is full";
-     var button = document.getElementById('bb4').style.visibility = "hidden";
+      document.getElementById('end4').innerHTML = "This room is full";
+     var button = document.getElementById('removeB4').style.visibility = "hidden";
 }
       
   }
@@ -106,18 +106,18 @@ function emList4() {
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
     if (total5.length < 4) {
-      var x = document.getElementById('usersChoice5').value;
-      total5.push(x);
+      var visitor = document.getElementById('usersChoice5').value;
+      total5.push(visitor);
        document.getElementById('usersChoice5').value = "";
-      var li = document.createElement('li');
-       var newText = document.createTextNode(x +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
-       li.appendChild(newText);
+      var newli = document.createElement('li');
+       var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
+       newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[4];
        olTag.appendChild(li);
 }
     else {
-      document.getElementById('t5').innerHTML = "This room is full";
-     var button = document.getElementById('bb5').style.visibility = "hidden";
+      document.getElementById('end5').innerHTML = "This room is full";
+     var button = document.getElementById('removeB5').style.visibility = "hidden";
 }
       
   }
@@ -129,18 +129,18 @@ function emList4() {
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
     if (total6.length < 4) {
-      var x = document.getElementById('usersChoice6').value;
-      total6.push(x);
+      var visitor = document.getElementById('usersChoice6').value;
+      total6.push(visitor);
        document.getElementById('usersChoice6').value = "";
-      var li = document.createElement('li');
-       var newText = document.createTextNode(x +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
-       li.appendChild(newText);
+      var newli = document.createElement('li');
+       var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
+       newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[5];
        olTag.appendChild(li);
 }
     else {
-      document.getElementById('t6').innerHTML = "This room is full";
-     var button = document.getElementById('bb6').style.visibility = "hidden";
+      document.getElementById('end6').innerHTML = "This room is full";
+     var button = document.getElementById('removeB6').style.visibility = "hidden";
 }
     
   }
@@ -150,8 +150,8 @@ function emList4() {
       var elim = document.getElementsByTagName('ol')[0];
       var ulTag = elim.childNodes[people];
       elim.removeChild(ulTag);
-      document.getElementById('t1').innerHTML = "";
-      var button = document.getElementById('bb1').style.visibility = "visible";
+      document.getElementById('end1').innerHTML = "";
+      var button = document.getElementById('removeB1').style.visibility = "visible";
 }
     function remove2(){
       total2.length--;
@@ -159,8 +159,8 @@ function emList4() {
      var elim = document.getElementsByTagName('ol')[1];
      var ulTag = elim.childNodes[people];
      elim.removeChild(ulTag);
-     document.getElementById('t2').innerHTML = "";
-     var button = document.getElementById('bb2').style.visibility = "visible";
+     document.getElementById('end2').innerHTML = "";
+     var button = document.getElementById('removeB2').style.visibility = "visible";
    }
    function remove3(){
      total3.length--;
@@ -168,8 +168,8 @@ function emList4() {
      var elim = document.getElementsByTagName('ol')[2];
      var ulTag = elim.childNodes[people];
      elim.removeChild(ulTag);
-     document.getElementById('t3').innerHTML = "";
-     var button = document.getElementById('bb3').style.visibility = "visible";
+     document.getElementById('end3').innerHTML = "";
+     var button = document.getElementById('removeB3').style.visibility = "visible";
    }
    function remove4(){
      total4.length--;
@@ -177,8 +177,8 @@ function emList4() {
      var elim = document.getElementsByTagName('ol')[3];
      var ulTag = elim.childNodes[people];
      elim.removeChild(ulTag);
-     document.getElementById('t4').innerHTML = "";
-     var button = document.getElementById('bb4').style.visibility = "visible";
+     document.getElementById('end4').innerHTML = "";
+     var button = document.getElementById('removeB4').style.visibility = "visible";
    }
   function remove5(){
     total5.length--;
@@ -186,8 +186,8 @@ function emList4() {
      var elim = document.getElementsByTagName('ol')[4];
      var ulTag = elim.childNodes[people];
      elim.removeChild(ulTag);
-     document.getElementById('t5').innerHTML = "";
-     var button = document.getElementById('bb5').style.visibility = "visible";
+     document.getElementById('end5').innerHTML = "";
+     var button = document.getElementById('removeB5').style.visibility = "visible";
    }
   function remove6(){
     total6.length--;
@@ -195,65 +195,65 @@ function emList4() {
      var elim = document.getElementsByTagName('ol')[5];
      var ulTag = elim.childNodes[people];
      elim.removeChild(ulTag);
-     document.getElementById('t6').innerHTML = "";
-     var button = document.getElementById('bb6').style.visibility = "visible";
+     document.getElementById('end6').innerHTML = "";
+     var button = document.getElementById('removeB6').style.visibility = "visible";
   }
 
 
   function removeAll1(){
     total.length=0;
-     var myNode = document.getElementById("people");
-     while (myNode.firstChild) {
-     myNode.removeChild(myNode.firstChild);
+     var currentNode = document.getElementById("people");
+     while (currentNode.firstChild) {
+     currentNode.removeChild(currentNode.firstChild);
 }
-     document.getElementById('t1').innerHTML = "";
-     var button = document.getElementById('bb1').style.visibility = "visible";
+     document.getElementById('end1').innerHTML = "";
+     var button = document.getElementById('removeB1').style.visibility = "visible";
   }
 
   
   function removeAll2(){
     total2.length=0;
-     var myNode = document.getElementById("people2");
-     while (myNode.firstChild) {
-     myNode.removeChild(myNode.firstChild);
+     var currentNode = document.getElementById("people2");
+     while (currentNode.firstChild) {
+     currentNode.removeChild(currentNode.firstChild);
 }
-     document.getElementById('t2').innerHTML = "";
-     var button = document.getElementById('bb2').style.visibility = "visible";
+     document.getElementById('end2').innerHTML = "";
+     var button = document.getElementById('removeB2').style.visibility = "visible";
   }
   
   function removeAll3(){
     total3.length=0;
-     var myNode = document.getElementById("people3");
-     while (myNode.firstChild) {
-     myNode.removeChild(myNode.firstChild);
+     var currentNode = document.getElementById("people3");
+     while (currentNode.firstChild) {
+     currentNode.removeChild(currentNode.firstChild);
 }
-     document.getElementById('t3').innerHTML = "";
-     var button = document.getElementById('bb3').style.visibility = "visible";
+     document.getElementById('end3').innerHTML = "";
+     var button = document.getElementById('removeB3').style.visibility = "visible";
   }
     function removeAll4(){
       total4.length=0;
-     var myNode = document.getElementById("people4");
-     while (myNode.firstChild) {
-     myNode.removeChild(myNode.firstChild);
+     var currentNode = document.getElementById("people4");
+     while (currentNode.firstChild) {
+     currentNode.removeChild(currentNode.firstChild);
 }
-     document.getElementById('t4').innerHTML = "";
-     var button = document.getElementById('bb4').style.visibility = "visible";
+     document.getElementById('end4').innerHTML = "";
+     var button = document.getElementById('removeB4').style.visibility = "visible";
   }
       function removeAll5(){
      total5.length=0;
-     var myNode = document.getElementById("people5");
-     while (myNode.firstChild) {
-     myNode.removeChild(myNode.firstChild);
+     var currentNode = document.getElementById("people5");
+     while (currentNode.firstChild) {
+     currentNode.removeChild(currentNode.firstChild);
 }
-     document.getElementById('t5').innerHTML = "";
-     var button = document.getElementById('bb5').style.visibility = "visible";
+     document.getElementById('end5').innerHTML = "";
+     var button = document.getElementById('removeB5').style.visibility = "visible";
   }
       function removeAll6(){
      total6.length=0;
-     var myNode = document.getElementById("people6");
-     while (myNode.firstChild) {
-     myNode.removeChild(myNode.firstChild);
+     var currentNode = document.getElementById("people6");
+     while (currentNode.firstChild) {
+     currentNode.removeChild(myNode.firstChild);
 }
-     document.getElementById('t6').innerHTML = "";
-     var button = document.getElementById('bb6').style.visibility = "visible";
+     document.getElementById('end6').innerHTML = "";
+     var button = document.getElementById('removeB6').style.visibility = "visible";
   }
