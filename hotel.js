@@ -14,7 +14,7 @@ var total = [];
       var year= currentDate.getFullYear();
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
-    if (total.length < 4) {
+    if (usersChoice.value !=="" && total.length < 4) {
       var visitor = document.getElementById('usersChoice').value;
       total.push(visitor);
        document.getElementById('usersChoice').value = "";
@@ -24,7 +24,7 @@ var total = [];
        var olTag = document.getElementsByTagName('ol')[0];
        olTag.appendChild(newli);
 }
-    else {
+    else if(total.length == 4){
       document.getElementById('end1').innerHTML = "This room is full";
      var button = document.getElementById('checkin1').style.visibility = "hidden";
 }
@@ -39,7 +39,7 @@ function emList2() {
       var year= currentDate.getFullYear();
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
-    if (total2.length < 4) {
+    if (usersChoice.value !=="" && total2.length < 4) {
       var visitor = document.getElementById('usersChoice2').value;
       total2.push(visitor);
        document.getElementById('usersChoice2').value = "";
@@ -49,7 +49,7 @@ function emList2() {
        var olTag = document.getElementsByTagName('ol')[1];
        olTag.appendChild(li);
 }
-    else {
+    else if(total.length == 4){
       document.getElementById('end2').innerHTML = "This room is full";
      var button = document.getElementById('checkin2').style.visibility = "hidden";
 }
@@ -62,7 +62,7 @@ function emList3() {
       var year= currentDate.getFullYear();
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
-    if (total3.length < 4) {
+    if (usersChoice.value !=="" && total3.length < 4) {
       var visitor = document.getElementById('usersChoice3').value;
       total3.push(visitor);
        document.getElementById('usersChoice3').value = "";
@@ -72,7 +72,7 @@ function emList3() {
        var olTag = document.getElementsByTagName('ol')[2];
        olTag.appendChild(li);
 }
-    else {
+    else if(total.length == 4){
       document.getElementById('end3').innerHTML = "This room is full";
      var button = document.getElementById('checkin3').style.visibility = "hidden";
 }
@@ -85,7 +85,7 @@ function emList4() {
       var year= currentDate.getFullYear();
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
-    if (total4.length < 4) {
+    if (usersChoice.value !=="" && total4.length < 4) {
       var visitor = document.getElementById('usersChoice4').value;
       total4.push(visitor);
        document.getElementById('usersChoice4').value = "";
@@ -95,7 +95,7 @@ function emList4() {
        var olTag = document.getElementsByTagName('ol')[3];
        olTag.appendChild(li);
 }
-    else {
+    else if(total.length == 4){
       document.getElementById('end4').innerHTML = "This room is full";
      var button = document.getElementById('checkin4').style.visibility = "hidden";
 }
@@ -108,7 +108,7 @@ function emList4() {
       var year= currentDate.getFullYear();
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
-    if (total5.length < 4) {
+    if (usersChoice.value !=="" && total5.length < 4) {
       var visitor = document.getElementById('usersChoice5').value;
       total5.push(visitor);
        document.getElementById('usersChoice5').value = "";
@@ -118,7 +118,7 @@ function emList4() {
        var olTag = document.getElementsByTagName('ol')[4];
        olTag.appendChild(li);
 }
-    else {
+    else if(total.length == 4){
       document.getElementById('end5').innerHTML = "This room is full";
      var button = document.getElementById('checkin5').style.visibility = "hidden";
 }
@@ -131,7 +131,7 @@ function emList4() {
       var year= currentDate.getFullYear();
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
-    if (total6.length < 4) {
+    if (usersChoice.value !=="" && total6.length < 4) {
       var visitor = document.getElementById('usersChoice6').value;
       total6.push(visitor);
        document.getElementById('usersChoice6').value = "";
@@ -141,7 +141,7 @@ function emList4() {
        var olTag = document.getElementsByTagName('ol')[5];
        olTag.appendChild(li);
 }
-    else {
+    else if(total.length == 4){
       document.getElementById('end6').innerHTML = "This room is full";
      var button = document.getElementById('checkin6').style.visibility = "hidden";
 }
