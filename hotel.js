@@ -23,7 +23,7 @@ var total = [];
 }
     else {
       document.getElementById('end1').innerHTML = "This room is full";
-     var button = document.getElementById('removeB1').style.visibility = "hidden";
+     var button = document.getElementById('checkin1').style.visibility = "hidden";
 }
     
       
@@ -48,7 +48,7 @@ function emList2() {
 }
     else {
       document.getElementById('end2').innerHTML = "This room is full";
-     var button = document.getElementById('removeB2').style.visibility = "hidden";
+     var button = document.getElementById('checkin2').style.visibility = "hidden";
 }
 
   }
@@ -71,7 +71,7 @@ function emList3() {
 }
     else {
       document.getElementById('end3').innerHTML = "This room is full";
-     var button = document.getElementById('removeB3').style.visibility = "hidden";
+     var button = document.getElementById('checkin3').style.visibility = "hidden";
 }
   
   }
@@ -94,7 +94,7 @@ function emList4() {
 }
     else {
       document.getElementById('end4').innerHTML = "This room is full";
-     var button = document.getElementById('removeB4').style.visibility = "hidden";
+     var button = document.getElementById('checkin4').style.visibility = "hidden";
 }
       
   }
@@ -117,7 +117,7 @@ function emList4() {
 }
     else {
       document.getElementById('end5').innerHTML = "This room is full";
-     var button = document.getElementById('removeB5').style.visibility = "hidden";
+     var button = document.getElementById('checkin5').style.visibility = "hidden";
 }
       
   }
@@ -140,7 +140,7 @@ function emList4() {
 }
     else {
       document.getElementById('end6').innerHTML = "This room is full";
-     var button = document.getElementById('removeB6').style.visibility = "hidden";
+     var button = document.getElementById('checkin6').style.visibility = "hidden";
 }
     
   }
@@ -151,7 +151,7 @@ function emList4() {
       var ulTag = elim.childNodes[people];
       elim.removeChild(ulTag);
       document.getElementById('end1').innerHTML = "";
-      var button = document.getElementById('removeB1').style.visibility = "visible";
+      var button = document.getElementById('checkin1').style.visibility = "visible";
 }
     function remove2(){
       total2.length--;
@@ -160,7 +160,7 @@ function emList4() {
      var ulTag = elim.childNodes[people];
      elim.removeChild(ulTag);
      document.getElementById('end2').innerHTML = "";
-     var button = document.getElementById('removeB2').style.visibility = "visible";
+     var button = document.getElementById('checkin2').style.visibility = "visible";
    }
    function remove3(){
      total3.length--;
@@ -169,7 +169,7 @@ function emList4() {
      var ulTag = elim.childNodes[people];
      elim.removeChild(ulTag);
      document.getElementById('end3').innerHTML = "";
-     var button = document.getElementById('removeB3').style.visibility = "visible";
+     var button = document.getElementById('checkin3').style.visibility = "visible";
    }
    function remove4(){
      total4.length--;
@@ -178,7 +178,7 @@ function emList4() {
      var ulTag = elim.childNodes[people];
      elim.removeChild(ulTag);
      document.getElementById('end4').innerHTML = "";
-     var button = document.getElementById('removeB4').style.visibility = "visible";
+     var button = document.getElementById('checkin4').style.visibility = "visible";
    }
   function remove5(){
     total5.length--;
@@ -187,7 +187,7 @@ function emList4() {
      var ulTag = elim.childNodes[people];
      elim.removeChild(ulTag);
      document.getElementById('end5').innerHTML = "";
-     var button = document.getElementById('removeB5').style.visibility = "visible";
+     var button = document.getElementById('checkin5').style.visibility = "visible";
    }
   function remove6(){
     total6.length--;
@@ -196,7 +196,7 @@ function emList4() {
      var ulTag = elim.childNodes[people];
      elim.removeChild(ulTag);
      document.getElementById('end6').innerHTML = "";
-     var button = document.getElementById('removeB6').style.visibility = "visible";
+     var button = document.getElementById('checkin6').style.visibility = "visible";
   }
 
 
@@ -207,7 +207,7 @@ function emList4() {
      currentNode.removeChild(currentNode.firstChild);
 }
      document.getElementById('end1').innerHTML = "";
-     var button = document.getElementById('removeB1').style.visibility = "visible";
+     var button = document.getElementById('checkin1').style.visibility = "visible";
   }
 
   
@@ -218,7 +218,7 @@ function emList4() {
      currentNode.removeChild(currentNode.firstChild);
 }
      document.getElementById('end2').innerHTML = "";
-     var button = document.getElementById('removeB2').style.visibility = "visible";
+     var button = document.getElementById('checkin2').style.visibility = "visible";
   }
   
   function removeAll3(){
@@ -228,7 +228,7 @@ function emList4() {
      currentNode.removeChild(currentNode.firstChild);
 }
      document.getElementById('end3').innerHTML = "";
-     var button = document.getElementById('removeB3').style.visibility = "visible";
+     var button = document.getElementById('checkin3').style.visibility = "visible";
   }
     function removeAll4(){
       total4.length=0;
@@ -237,7 +237,7 @@ function emList4() {
      currentNode.removeChild(currentNode.firstChild);
 }
      document.getElementById('end4').innerHTML = "";
-     var button = document.getElementById('removeB4').style.visibility = "visible";
+     var button = document.getElementById('checkin4').style.visibility = "visible";
   }
       function removeAll5(){
      total5.length=0;
@@ -246,7 +246,7 @@ function emList4() {
      currentNode.removeChild(currentNode.firstChild);
 }
      document.getElementById('end5').innerHTML = "";
-     var button = document.getElementById('removeB5').style.visibility = "visible";
+     var button = document.getElementById('checkin5').style.visibility = "visible";
   }
       function removeAll6(){
      total6.length=0;
@@ -255,5 +255,71 @@ function emList4() {
      currentNode.removeChild(currentNode.firstChild);
 }
      document.getElementById('end6').innerHTML = "";
-     var button = document.getElementById('removeB6').style.visibility = "visible";
+     var button = document.getElementById('checkin6').style.visibility = "visible";
   }
+  
+function lockRoomOne() {
+      if (checkboxOne.checked == true) {
+      window.alert("Room 1 is now locked for maintenance");
+      document.getElementById('checkin1').disabled=true;
+    }
+    else if (checkboxOne.checked == false) {
+      window.alert("Room 1 is now ready to use");
+      document.getElementById('checkin1').disabled=false;
+    }
+}
+
+function lockRoomTwo() {
+      if (checkboxTwo.checked == true) {
+      window.alert("Room 2 is now locked for maintenance");
+      document.getElementById('checkin2').disabled=true;
+    }
+    else if (checkboxTwo.checked == false) {
+      window.alert("Room 2 is now ready to use");
+      document.getElementById('checkin2').disabled=false;
+    }
+}
+
+function lockRoomThree() {
+      if (checkboxThree.checked == true) {
+      window.alert("Room 3 is now locked for maintenance");
+      document.getElementById('checkin3').disabled=true;
+    }
+    else if (checkboxThree.checked == false) {
+      window.alert("Room 3 is now ready to use");
+      document.getElementById('checkin3').disabled=false;
+    }
+}
+
+function lockRoomFour() {
+      if (checkboxFour.checked == true) {
+      window.alert("Room 4 is now locked for maintenance");
+      document.getElementById('checkin4').disabled=true;
+    }
+    else if (checkboxFour.checked == false) {
+      window.alert("Room 4 is now ready to use");
+      document.getElementById('checkin4').disabled=false;
+    }
+}
+
+function lockRoomFive() {
+      if (checkboxFive.checked == true) {
+      window.alert("Room 5 is now locked for maintenance");
+      document.getElementById('checkin5').disabled=true;
+    }
+    else if (checkboxFive.checked == false) {
+      window.alert("Room 5 is now ready to use");
+      document.getElementById('checkin5').disabled=false;
+    }
+}
+
+function lockRoomSix() {
+      if (checkboxSix.checked == true) {
+      window.alert("Room 6 is now locked for maintenance");
+      document.getElementById('checkin6').disabled=true;
+    }
+    else if (checkboxSix.checked == false) {
+      window.alert("Room 6 is now ready to use");
+      document.getElementById('checkin6').disabled=false;
+    }
+}
