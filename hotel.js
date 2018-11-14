@@ -252,7 +252,7 @@ function emList4() {
      total6.length=0;
      var currentNode = document.getElementById("people6");
      while (currentNode.firstChild) {
-     currentNode.removeChild(myNode.firstChild);
+     currentNode.removeChild(currentNode.firstChild);
 }
      document.getElementById('end6').innerHTML = "";
      var button = document.getElementById('removeB6').style.visibility = "visible";
