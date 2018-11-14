@@ -4,6 +4,9 @@ var total = [];
   var total4 = [];
   var total5 = [];
   var total6 = [];
+
+//below are add customer functions
+  
   function emList() {
     var currentDate = new Date();
       var date = currentDate.getDate();
@@ -142,6 +145,9 @@ function emList4() {
       document.getElementById('end6').innerHTML = "This room is full";
      var button = document.getElementById('checkin6').style.visibility = "hidden";
 }
+
+
+//below are remove customer buttons
     
   }
     function remove1(){
@@ -199,6 +205,7 @@ function emList4() {
      var button = document.getElementById('checkin6').style.visibility = "visible";
   }
 
+//below are remove all buttons
 
   function removeAll1(){
     total.length=0;
@@ -257,6 +264,9 @@ function emList4() {
      document.getElementById('end6').innerHTML = "";
      var button = document.getElementById('checkin6').style.visibility = "visible";
   }
+  
+  
+//below are lock room buttons
   
 function lockRoomOne() {
       if (checkboxOne.checked == true) {
