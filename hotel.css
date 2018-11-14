@@ -1,4 +1,4 @@
-       body {
+  body {
       background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/02/f5/d6/f0/grand-aston-yogyakarta.jpg");
       background-size:100%;
     }
@@ -11,7 +11,7 @@
       
     }
     #d1{
-        height:80vh;
+        height:70vh;
         width:15vw;
         background-color:white;
         float:left;
@@ -20,47 +20,52 @@
        
     }
     #d2{
-        height:80vh;
+        height:70vh;
         width:15vw;
         background-color:white;
         float:left;
         margin-left:10px;
         border: double;
+        overflow:scroll;
       
     }
     #d3{
-        height:80vh;
+        height:70vh;
         width:15vw;
         background-color:white;
         float:left;
         margin-left:10px;
         border: double;
+        overflow:scroll;
         
     }
      #d4{
-        height:80vh;
+        height:70vh;
         width:15vw;
         float:left;
         background-color:white;
         margin-left:10px;
         border: double;
+        overflow:scroll;
+        overflow:scroll;
     }
          #d5{
-        height:80vh;
+        height:70vh;
         width:15vw;
         background-color:white;
         float:left;
         margin-left:10px;
         border: double;
-        
+        overflow:scroll;
     }
          #d6{
-        height:80vh;
+        height:70vh;
         width:15vw;
         background-color:white;
         float:left;
         margin-left:10px;
         border: double;
+        overflow:scroll;
     }
     h1{
       font-size:25px;
