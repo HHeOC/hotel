@@ -4,9 +4,19 @@ var total = [];
   var total4 = [];
   var total5 = [];
   var total6 = [];
+  var guestlog = [];
+  
+  function guestLog(){
+    if(guestlog.length>0){
+      window.alert("below are the constumer has checked-in")
+      window.alert(guestlog);
+    }
+    else if(guestlog.length===0){
+      window.alert("there is no constumer has checked-in");
+    }
+  }
 
 //below are add customer functions
-  
   function emList() {
     var currentDate = new Date();
       var date = currentDate.getDate();
@@ -17,20 +27,21 @@ var total = [];
     if (usersChoice.value !=="" && total.length < 4) {
       var visitor = document.getElementById('usersChoice').value;
       total.push(visitor);
+      guestlog.push(visitor);
        document.getElementById('usersChoice').value = "";
       var newli = document.createElement('li');
        var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
        newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[0];
        olTag.appendChild(newli);
-}
-    else if(total.length == 4){
+       
+    }
+    else if(usersChoice.value !=="" && total.length == 4){
       document.getElementById('end1').innerHTML = "This room is full";
+      document.getElementById('usersChoice').value = "";
      var button = document.getElementById('checkin1').style.visibility = "hidden";
+    }
 }
-    
-      
-  }
 
 function emList2() {
     var currentDate = new Date();
@@ -39,18 +50,20 @@ function emList2() {
       var year= currentDate.getFullYear();
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
-    if (usersChoice.value !=="" && total2.length < 4) {
+    if (usersChoice2.value !=="" && total2.length < 4) {
       var visitor = document.getElementById('usersChoice2').value;
       total2.push(visitor);
-       document.getElementById('usersChoice2').value = "";
+      guestlog.push(visitor);
+      document.getElementById('usersChoice2').value = "";
       var newli = document.createElement('li');
        var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
        newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[1];
-       olTag.appendChild(li);
+       olTag.appendChild(newli);
 }
-    else if(total.length == 4){
+    else if(usersChoice2.value !=="" && total.length == 4){
       document.getElementById('end2').innerHTML = "This room is full";
+      document.getElementById('usersChoice2').value = "";
      var button = document.getElementById('checkin2').style.visibility = "hidden";
 }
 
@@ -62,17 +75,18 @@ function emList3() {
       var year= currentDate.getFullYear();
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
-    if (usersChoice.value !=="" && total3.length < 4) {
+    if (usersChoice3.value !=="" && total3.length < 4) {
       var visitor = document.getElementById('usersChoice3').value;
       total3.push(visitor);
+      guestlog.push(visitor);
        document.getElementById('usersChoice3').value = "";
       var newli = document.createElement('li');
        var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
        newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[2];
-       olTag.appendChild(li);
+       olTag.appendChild(newli);
 }
-    else if(total.length == 4){
+    else if(usersChoice3.value !=="" && total.length == 4){
       document.getElementById('end3').innerHTML = "This room is full";
      var button = document.getElementById('checkin3').style.visibility = "hidden";
 }
@@ -85,17 +99,18 @@ function emList4() {
       var year= currentDate.getFullYear();
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
-    if (usersChoice.value !=="" && total4.length < 4) {
+    if (usersChoice4.value !=="" && total4.length < 4) {
       var visitor = document.getElementById('usersChoice4').value;
       total4.push(visitor);
+      guestlog.push(visitor);
        document.getElementById('usersChoice4').value = "";
       var newli = document.createElement('li');
        var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
        newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[3];
-       olTag.appendChild(li);
+       olTag.appendChild(newli);
 }
-    else if(total.length == 4){
+    else if(usersChoice4.value !=="" && total.length == 4){
       document.getElementById('end4').innerHTML = "This room is full";
      var button = document.getElementById('checkin4').style.visibility = "hidden";
 }
@@ -108,17 +123,18 @@ function emList4() {
       var year= currentDate.getFullYear();
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
-    if (usersChoice.value !=="" && total5.length < 4) {
+    if (usersChoice5.value !=="" && total5.length < 4) {
       var visitor = document.getElementById('usersChoice5').value;
       total5.push(visitor);
+      guestlog.push(visitor);
        document.getElementById('usersChoice5').value = "";
       var newli = document.createElement('li');
        var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
        newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[4];
-       olTag.appendChild(li);
+       olTag.appendChild(newli);
 }
-    else if(total.length == 4){
+    else if(usersChoice5.value !=="" && total.length == 4){
       document.getElementById('end5').innerHTML = "This room is full";
      var button = document.getElementById('checkin5').style.visibility = "hidden";
 }
@@ -131,18 +147,20 @@ function emList4() {
       var year= currentDate.getFullYear();
       var n = currentDate.toLocaleTimeString();
       var dateString = (month + 1) + "/" + date + "/" + year;
-    if (usersChoice.value !=="" && total6.length < 4) {
+    if (usersChoice6.value !=="" && total6.length < 4) {
       var visitor = document.getElementById('usersChoice6').value;
       total6.push(visitor);
+      guestlog.push(visitor);
        document.getElementById('usersChoice6').value = "";
       var newli = document.createElement('li');
        var newText = document.createTextNode(visitor +" " + "(" + "checked in" + " " + dateString + " " + n + ")");
        newli.appendChild(newText);
        var olTag = document.getElementsByTagName('ol')[5];
-       olTag.appendChild(li);
+       olTag.appendChild(newli);
 }
-    else if(total.length == 4){
+    else if(usersChoice6.value !=="" && total.length == 4){
       document.getElementById('end6').innerHTML = "This room is full";
+      document.getElementById('usersChoice6').value = "";
      var button = document.getElementById('checkin6').style.visibility = "hidden";
 }
 
