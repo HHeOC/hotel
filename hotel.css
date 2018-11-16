@@ -66,6 +66,13 @@
         border: double;
         overflow:scroll;
     }
+    #guest{
+      margin-left:45%;
+      margin-right:35%;
+      margin-top:-3%;
+      background-color:green;
+      color:white;
+    }
     h1{
       font-size:25px;
     }
